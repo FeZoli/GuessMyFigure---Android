@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Gondoltam...</string>
+    <string name="msg_guesser_top">Gondoltam egy számot %1s között</string>
     <string name="edit_message">Tippelj!</string>
     <string name="button_tip">Tippelek</string>
     <string name="button_newguess">Új számot kérek!</string>
-    
+    <string name="msg_less_than"> kisebb, mint amire gondoltam.</string>
     <string name="more">Továbbiak</string>
     <string name="action_quit">Kilépés</string>
     <string name="action_compose">Létrehozás</string>
     <string name="guesser">Számkitaláló</string>
     <string name="rounding">Kerekítő</string>
+    <string name="msg_more_than"> nagyobb, mint amire gondoltam.</string>
+    <string name="msg_found">Igen! KITALÁLTAD!!! Ügyes vagy!</string>
+    <string name="msg_found_a_new">Megvan, gondoltam egy újat. Próbálkozz!</string>
+    <string name="settings">Beállítások</string>
+    <string name="back">Vissza</string>
 </resources>

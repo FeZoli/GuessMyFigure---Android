@@ -3,6 +3,7 @@ package guessmyfigure.minux.hu;
 import java.util.Random;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -16,8 +17,11 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
+	protected Resources res;
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
+
 		// Inflate the menu items for use in the action bar
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.main_activity_actions, menu);

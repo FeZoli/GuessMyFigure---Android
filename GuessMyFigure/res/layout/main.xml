@@ -3,18 +3,8 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_gravity="center"
     android:orientation="vertical" >
-
-    <EditText
-        android:id="@+id/edit_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:hint="@string/edit_message"
-        android:inputType="numberSigned"
-        android:singleLine="true" />
 
     <Button
         android:id="@+id/Button2"
@@ -32,22 +22,47 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/edit_message"
-        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
         android:gravity="center_horizontal"
         android:paddingTop="10dp"
         android:textColor="#FFFF00"
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_msg"
+        android:hint="@string/edit_message"
+        android:inputType="numberSigned"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
     <Button
         android:id="@+id/TipButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button2"
+        android:layout_alignRight="@+id/Button2"
         android:layout_below="@+id/edit_message"
-        android:layout_centerHorizontal="true"
         android:onClick="sendTip"
         android:text="@string/button_tip"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/msg_guesser_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_msg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

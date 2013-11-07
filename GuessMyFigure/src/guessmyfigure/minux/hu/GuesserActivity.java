@@ -2,7 +2,11 @@ package guessmyfigure.minux.hu;
 
 import java.util.Random;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,12 +16,34 @@ public class GuesserActivity extends MainActivity {
 
 	private int myGuess;
 	private Button tipButton;
+	private TextView msgGuesserTop;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		res = getResources();
 		createFigureToBeGuessed();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu items for use in the action bar
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.guesser_activity_actions, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.action_guesser_settings:
+			this.doSettings();
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	public void sendTip(View view) {
@@ -33,12 +59,12 @@ public class GuesserActivity extends MainActivity {
 		int userGuess = Integer.parseInt(tipText.getText().toString());
 
 		if (userGuess < myGuess) {
-			msgView.setText(userGuess + " kisebb, mint amire gondoltam.");
+			msgView.setText(userGuess + res.getString(R.string.msg_less_than));
 		} else if (userGuess > myGuess) {
-			msgView.setText(userGuess + " nagyobb, mint amire gondoltam.");
+			msgView.setText(userGuess + res.getString(R.string.msg_more_than));
 		} else {
 			tipButton.setEnabled(false);
-			msgView.setText(userGuess + ". Igen. KITALÁLTAD!!! Ügyes vagy!");
+			msgView.setText(userGuess + "." + res.getString(R.string.msg_found));
 		}
 
 		tipText.setText("", TextView.BufferType.NORMAL);
@@ -47,7 +73,7 @@ public class GuesserActivity extends MainActivity {
 	public void newGuess(View view) {
 		createFigureToBeGuessed();
 		TextView msgView = (TextView) findViewById(R.id.view_msg);
-		msgView.setText("Megvan, gondoltam egy újat. Próbálkozz!");
+		msgView.setText(res.getString(R.string.msg_found_a_new));
 		tipButton.setEnabled(true);
 	}
 
@@ -55,6 +81,17 @@ public class GuesserActivity extends MainActivity {
 
 		Random randomGenerator = new Random();
 		myGuess = randomGenerator.nextInt(100);
+
+		String msgTop = String.format(res.getString(R.string.msg_guesser_top),
+				"0-100");
+		msgGuesserTop = (TextView) findViewById(R.id.msg_guesser_top);
+		msgGuesserTop.setText(msgTop);
 	}
 
+	private void doSettings() {
+		// Display the fragment as the main content.
+		getFragmentManager().beginTransaction()
+				.replace(android.R.id.content, new GuesserPreferences())
+				.commit();
+	}
 }
