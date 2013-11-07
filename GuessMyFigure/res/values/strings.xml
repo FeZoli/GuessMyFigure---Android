@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Gondoltam egy számot 0 és 100 között</string>
+    <string name="app_name">Gondoltam...</string>
     <string name="edit_message">Tippelj!</string>
     <string name="button_tip">Tippelek</string>
     <string name="button_newguess">Új számot kérek!</string>
     
-    <string name="action_search">Keresés</string>
+    <string name="more">Továbbiak</string>
+    <string name="action_quit">Kilépés</string>
     <string name="action_compose">Létrehozás</string>
-    
-    
+    <string name="guesser">Számkitaláló</string>
+    <string name="rounding">Kerekítő</string>
 </resources>

@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <menu 	xmlns:android="http://schemas.android.com/apk/res/android"
-        	xmlns:yourapp="http://schemas.android.com/apk/res-auto" >        
-         <item android:id="@+id/action_search"
-          android:icon="@android:drawable/ic_menu_more"
-          android:title="@string/action_search" 
-          yourapp:showAsAction="ifRoom"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="@string/more"
+        yourapp:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_guesser"
+                android:title="@string/guesser"
+                yourapp:showAsAction="ifRoom|withText">
+            </item>
+            <item
+                android:id="@+id/action_rounding"
+                android:title="@string/rounding"
+                yourapp:showAsAction="ifRoom|withText">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_quit"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/action_quit"
+        yourapp:showAsAction="always">
+    </item>
+
 </menu>
