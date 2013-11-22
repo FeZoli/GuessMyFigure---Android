@@ -353,7 +353,7 @@ int string abc_shareactionprovider_share_with 0x7f0b000c
 int string abc_shareactionprovider_share_with_application 0x7f0b000b
 int string action_compose 0x7f0b0015
 int string action_quit 0x7f0b0014
-int string action_settings 0x7f0b001e
+int string action_settings 0x7f0b0022
 int string app_name 0x7f0b000d
 int string back 0x7f0b001c
 int string button_newguess 0x7f0b0011
@@ -366,13 +366,13 @@ int string msg_found_a_new 0x7f0b001a
 int string msg_guesser_top 0x7f0b000e
 int string msg_less_than 0x7f0b0012
 int string msg_more_than 0x7f0b0018
-int string msg_rounder_tip_failed 0x7f0b0020
-int string msg_rounder_tip_success 0x7f0b0021
-int string msg_rounder_top 0x7f0b001f
-int string rounder_button_new_tip 0x7f0b0022
+int string msg_rounder_tip_failed 0x7f0b001e
+int string msg_rounder_tip_success 0x7f0b001f
+int string msg_rounder_top 0x7f0b001d
+int string rounder_button_new_tip 0x7f0b0020
 int string rounding 0x7f0b0017
 int string settings 0x7f0b001b
-int string title_activity_rounder 0x7f0b001d
+int string title_activity_rounder 0x7f0b0021
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0c0061
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0c0069
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0c006b
