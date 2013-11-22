@@ -22,7 +22,6 @@ public class GuesserActivity extends MainActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		res = getResources();
 		createFigureToBeGuessed();
 	}
 
@@ -40,9 +39,8 @@ public class GuesserActivity extends MainActivity {
 		case R.id.action_guesser_settings:
 			this.doSettings();
 			return true;
-		default:
-			return super.onOptionsItemSelected(item);
 		}
+		return super.onOptionsItemSelected(item);
 	}
 
 	public void sendTip(View view) {

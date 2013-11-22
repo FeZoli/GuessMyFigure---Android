@@ -19,6 +19,8 @@
     <string name="back">Vissza</string>
     <string name="title_activity_rounder">RounderActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="msg_rounder_top">Mennyi lehet %1s kerekítve?</string>
+    <string name="msg_rounder_tip_failed">Sajnos nem jó, próbálkozz újra!</string>
+    <string name="msg_rounder_tip_success">Igen! HELYES!</string>        
 
 </resources>

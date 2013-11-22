@@ -18,6 +18,12 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
 	protected Resources res;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		res = getResources();		
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
