@@ -28,7 +28,6 @@ public class GuesserActivity extends MainActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
 		// Inflate the menu items for use in the action bar
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.guesser_activity_actions, menu);
@@ -59,15 +58,15 @@ public class GuesserActivity extends MainActivity {
 		int userGuess = Integer.parseInt(tipText.getText().toString());
 
 		if (userGuess < myGuess) {
-			msgView.setText(userGuess + res.getString(R.string.msg_less_than));
+			msgView.setText(userGuess + " " + res.getString(R.string.msg_less_than));
 		} else if (userGuess > myGuess) {
-			msgView.setText(userGuess + res.getString(R.string.msg_more_than));
+			msgView.setText(userGuess + " " + res.getString(R.string.msg_more_than));
 		} else {
 			tipButton.setEnabled(false);
-			msgView.setText(userGuess + "." + res.getString(R.string.msg_found));
+			msgView.setText(userGuess + " " + res.getString(R.string.msg_found));
 		}
 
-		tipText.setText("", TextView.BufferType.NORMAL);
+		tipText.setText("");
 	}
 
 	public void newGuess(View view) {
@@ -89,9 +88,7 @@ public class GuesserActivity extends MainActivity {
 	}
 
 	private void doSettings() {
-		// Display the fragment as the main content.
-		getFragmentManager().beginTransaction()
-				.replace(android.R.id.content, new GuesserPreferences())
-				.commit();
+		Intent intent = new Intent(this, GuesserPreferences.class);
+		startActivity(intent);
 	}
 }

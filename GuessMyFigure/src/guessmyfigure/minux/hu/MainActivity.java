@@ -49,11 +49,10 @@ public class MainActivity extends ActionBarActivity {
 
 		Intent intent = new Intent(this, GuesserActivity.class);
 		startActivity(intent);
-
-		return;
 	}
 
 	private void startRounding() {
-		return;
+		Intent intent = new Intent(this, RounderActivity.class);
+		startActivity(intent);
 	}
 }

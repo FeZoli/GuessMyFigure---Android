@@ -1,9 +1,9 @@
 package guessmyfigure.minux.hu;
 
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
+import android.preference.PreferenceActivity;
 
-public class GuesserPreferences extends PreferenceFragment {
+public class GuesserPreferences extends PreferenceActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
