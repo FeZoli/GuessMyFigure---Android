@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Gondoltam...</string>
-    <string name="msg_guesser_top">Gondoltam egy számot %1s között</string>
-    <string name="edit_message">Tippelj!</string>
-    <string name="button_tip">Tippelek</string>
-    <string name="button_newguess">Új számot kérek!</string>
-    <string name="msg_less_than">kisebb, mint amire gondoltam.</string>
-    <string name="more">Továbbiak</string>
-    <string name="action_quit">Kilépés</string>
-    <string name="action_compose">Létrehozás</string>
-    <string name="guesser">Számkitaláló</string>
-    <string name="rounding">Kerekítő</string>
-    <string name="msg_more_than">nagyobb, mint amire gondoltam.</string>
-    <string name="msg_found">Igen! KITALÁLTAD!!! Ügyes vagy!</string>
-    <string name="msg_found_a_new">Megvan, gondoltam egy újat. Próbálkozz!</string>
-    <string name="settings">Beállítások</string>
-    <string name="back">Vissza</string>
-    <string name="title_activity_rounder">RounderActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="msg_rounder_top">Mennyi lehet %1s kerekítve?</string>
-    <string name="msg_rounder_tip_failed">sajnos nem jó, próbálkozz újra!</string>
-    <string name="msg_rounder_tip_success">Igen! HELYES!</string>        
-	<string name="rounder_button_new_tip">Újra</string>
+    <string name="app_name">GuessMyFigure...</string>
+    <string name="msg_guesser_top">My figure is between %1s</string>
+    <string name="edit_message">Guess!</string>
+    <string name="button_tip">I guess</string>
+    <string name="button_newguess">Again!</string>
+    <string name="msg_less_than">less then my figure</string>
+    <string name="more">More</string>
+    <string name="action_quit">Quit</string>
+    <string name="action_compose">Create</string>
+    <string name="guesser">Guess my figure</string>
+    <string name="rounding">Rounding</string>
+    <string name="msg_more_than">greater then my figure</string>
+    <string name="msg_found">Yesss! You got it!!! Great job!</string>
+    <string name="msg_found_a_new">OK, I\'ve found a new. Try!</string>
+    <string name="settings">Settings</string>
+    <string name="back">Back</string>
+    <string name="msg_rounder_top">How much is %1s rounded?</string>
+    <string name="msg_rounder_tip_failed">unfortunately not correct, try again!</string>
+    <string name="msg_rounder_tip_success">Yes! RIGHT!</string>        
+	<string name="rounder_button_new_tip">Again</string>
     
 </resources>
