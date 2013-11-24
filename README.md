@@ -6,7 +6,7 @@ A small game for kids. It's a hobby project. Please be patient!
 
 For the impatient (and anybody else)
 ------------------------------------
-Download the latest build. Supported Android versions: 2.3 and above. 
+Download the latest build. Supported Android versions: 2.3 and above. <br>
 https://github.com/FeZoli/GuessMyFigure---Android/blob/master/GuessMyFigure/bin/GuessMyFigure.apk?raw=true
 
 NOTE: You have to enable external app sources before you can install it.
