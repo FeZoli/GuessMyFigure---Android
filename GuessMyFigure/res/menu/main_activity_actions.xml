@@ -18,6 +18,11 @@
                 android:title="@string/rounding"
                 yourapp:showAsAction="ifRoom|withText">
             </item>
+            <item
+                android:id="@+id/action_multiplication"
+                android:title="@string/multiplication"
+                yourapp:showAsAction="ifRoom|withText">
+            </item>
         </menu>
     </item>
     <item

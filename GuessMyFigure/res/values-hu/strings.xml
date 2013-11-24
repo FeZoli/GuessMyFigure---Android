@@ -23,5 +23,6 @@
     <string name="msg_rounder_tip_failed">sajnos nem jó, próbálkozz újra!</string>
     <string name="msg_rounder_tip_success">Igen! HELYES!</string>        
 	<string name="rounder_button_new_tip">Újra</string>
-    
+    <string name="multiplication">Szorzótábla</string>
+	<string name="msg_multiplication_top">Mennyi a szorzás eredménye?</string>    
 </resources>

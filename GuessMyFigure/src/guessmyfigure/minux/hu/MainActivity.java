@@ -46,13 +46,15 @@ public class MainActivity extends ActionBarActivity {
 		case R.id.action_rounding:
 			startRounding();
 			return true;
+		case R.id.action_multiplication:
+			startMultiplication();
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
 	}
 
 	private void startGuesser() {
-
 		Intent intent = new Intent(this, GuesserActivity.class);
 		startActivity(intent);
 	}
@@ -61,4 +63,9 @@ public class MainActivity extends ActionBarActivity {
 		Intent intent = new Intent(this, RounderActivity.class);
 		startActivity(intent);
 	}
+	
+	private void startMultiplication() {
+		Intent intent = new Intent(this, MultiplicationActivity.class);
+		startActivity(intent);
+	}	
 }
