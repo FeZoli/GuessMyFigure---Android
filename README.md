@@ -15,7 +15,7 @@ TODO
 ----
 - a better English translation
 - other translations
-- a nice user interface (any volunteer?)
+- a nice user interface (_any volunteer?_)
 - preferences
 - more games
 - Google Play deployment
