@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">GuessMyFigure...</string>
-    <string name="msg_guesser_top">My figure is between %1s</string>
+    <string name="msg_guesser_top">My figure is between %% and %%</string>
     <string name="edit_message">Guess!</string>
     <string name="button_tip">I guess</string>
     <string name="button_newguess">Again!</string>
@@ -26,5 +26,11 @@
     <string name="multiplication">Multiplication</string>
     <string name="msg_how_much_is_result">How much is the result?</string>
     <string name="addition">Addition</string>
-
+	<string name="guesser_pref_min_val_title">Min value</string>
+	<string name="guesser_pref_min_val_summary">The lowest value to be guessed</string>
+	<string name="guesser_pref_max_val_title">Max value</string>
+	<string name="guesser_pref_max_val_summary">The highest value to be guessed</string>
+	<string name="guesser_pref_min_error">The minimum should be less then the maximum value!</string>	
+	<string name="guesser_pref_max_error">The maximum should be greater then the minimum value!</string>	
+	
 </resources>

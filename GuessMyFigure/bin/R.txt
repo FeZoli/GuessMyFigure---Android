@@ -378,6 +378,12 @@ int string button_newguess 0x7f0b0011
 int string button_tip 0x7f0b0010
 int string edit_message 0x7f0b000f
 int string guesser 0x7f0b0016
+int string guesser_pref_max_error 0x7f0b002b
+int string guesser_pref_max_val_summary 0x7f0b0029
+int string guesser_pref_max_val_title 0x7f0b0028
+int string guesser_pref_min_error 0x7f0b002a
+int string guesser_pref_min_val_summary 0x7f0b0027
+int string guesser_pref_min_val_title 0x7f0b0026
 int string more 0x7f0b0013
 int string msg_found 0x7f0b0019
 int string msg_found_a_new 0x7f0b001a
@@ -392,7 +398,7 @@ int string multiplication 0x7f0b0023
 int string rounder_button_new_tip 0x7f0b0020
 int string rounding 0x7f0b0017
 int string settings 0x7f0b001b
-int string title_activity_rounder 0x7f0b0026
+int string title_activity_rounder 0x7f0b002c
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0c0061
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0c0069
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0c006b
@@ -626,4 +632,4 @@ int[] styleable View { 0x010100da, 0x7f010034, 0x7f010035 }
 int styleable View_android_focusable 0
 int styleable View_paddingEnd 2
 int styleable View_paddingStart 1
-int xml preferences 0x7f050000
+int xml guesser_preferences 0x7f050000
