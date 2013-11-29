@@ -49,6 +49,9 @@ public class MainActivity extends ActionBarActivity {
 		case R.id.action_multiplication:
 			startMultiplication();
 			return true;
+		case R.id.action_addition:
+			startAddition();
+			return true;			
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -67,5 +70,11 @@ public class MainActivity extends ActionBarActivity {
 	private void startMultiplication() {
 		Intent intent = new Intent(this, MultiplicationActivity.class);
 		startActivity(intent);
+	}
+
+	private void startAddition() {
+		Intent intent = new Intent(this, AdditionActivity.class);
+		startActivity(intent);
 	}	
+	
 }

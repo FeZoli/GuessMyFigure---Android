@@ -78,11 +78,11 @@ public class RounderActivity extends MainActivity {
 		if (userGuess != ((myGuess+5) / 10) * 10) {
 			workTextView.setText(myGuess 
 			+ System.getProperty("line.separator")
-			+ userGuess + " " + res.getString(R.string.msg_rounder_tip_failed));
+			+ userGuess + " " + res.getString(R.string.msg_tip_failed));
 		} else {
 			sendTipButton.setVisibility(View.INVISIBLE);
 			requestNewTipButton.setVisibility(View.VISIBLE);
-			workTextView.setText(userGuess + " " + res.getString(R.string.msg_rounder_tip_success));
+			workTextView.setText(userGuess + " " + res.getString(R.string.msg_tip_success));
 		}
 		
 		tipText.setText("");

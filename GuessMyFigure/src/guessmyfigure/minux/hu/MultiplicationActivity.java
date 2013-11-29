@@ -18,6 +18,8 @@ public class MultiplicationActivity extends MainActivity {
 	private TextView workTextView;
 	private Button sendTipButton;
 	private Button requestNewTipButton;
+	
+	private final static String MULTIPLICATION_SYMBOL = "×";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,19 +48,17 @@ public class MultiplicationActivity extends MainActivity {
 		int userGuess = Integer.parseInt(tipText.getText().toString());
 
 		if (userGuess != myGuess) {
-			workTextView.setText(number1 + " × " + number2 
+			workTextView.setText(number1 + " " + MULTIPLICATION_SYMBOL + " " + number2 
 			+ System.getProperty("line.separator")
-			+ userGuess + " " + res.getString(R.string.msg_rounder_tip_failed));
+			+ userGuess + " " + res.getString(R.string.msg_tip_failed));
 		} else {
 			sendTipButton.setVisibility(View.INVISIBLE);
 			requestNewTipButton.setVisibility(View.VISIBLE);
-			workTextView.setText(
-					number1 + " × " + number2 + " = " + userGuess 
-					+ " " + res.getString(R.string.msg_rounder_tip_success));
-		}
-		
-		tipText.setText("");
-		
+			workTextView.setText(number1 + " " + MULTIPLICATION_SYMBOL + " "
+					+ number2 + " = " + userGuess 
+					+ " " + res.getString(R.string.msg_tip_success));
+		}		
+		tipText.setText("");		
 	}
 	
 	public void requestNewTip(View view) {
@@ -66,8 +66,7 @@ public class MultiplicationActivity extends MainActivity {
 		sendTipButton.setVisibility(View.VISIBLE);
 		requestNewTipButton.setVisibility(View.INVISIBLE);		
 		startMultiplication();
-	}
-	
+	}	
 	
 	private void startMultiplication() {
 
@@ -85,15 +84,14 @@ public class MultiplicationActivity extends MainActivity {
 		
 		myGuess = number1 * number2;
 
-		String msgTop = res.getString(R.string.msg_multiplication_top);
+		String msgTop = res.getString(R.string.msg_how_much_is_result);
 
 		topTextView = (TextView) findViewById(R.id.MultiplicationTopTextView);
 		topTextView.setText(msgTop);
 		
-		String msgWork = Integer.toString(number1) + " × " + Integer.toString(number2) + " = ";
+		String msgWork = Integer.toString(number1) + " " + MULTIPLICATION_SYMBOL + " "
+				+ Integer.toString(number2) + " = ";
 		workTextView = (TextView) findViewById(R.id.MultiplicationWorkMessageTextView);
 		workTextView.setText(msgWork);
 	}
-	
-
 }

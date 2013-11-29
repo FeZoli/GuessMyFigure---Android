@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AdditionActivity" >
+
+    <TextView
+        android:id="@+id/AdditionTopTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:text="TopTextView" />
+
+    <TextView
+        android:id="@+id/AdditionWorkMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/AdditionTopTextView"
+        android:layout_below="@+id/AdditionTopTextView"
+        android:layout_marginBottom="6dp"
+        android:lines="2"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/AdditionTipTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AdditionWorkMessageTextView"
+        android:layout_below="@+id/AdditionWorkMessageTextView"
+        android:layout_toLeftOf="@+id/AdditionSendTipButton"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/AdditionSendTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AdditionTipTextField"
+        android:layout_alignRight="@+id/AdditionWorkMessageTextView"
+        android:layout_alignTop="@+id/AdditionTipTextField"
+        android:onClick="sendTip"
+        android:text="@string/button_tip"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/AdditionNewTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AdditionSendTipButton"
+        android:layout_alignLeft="@+id/AdditionSendTipButton"
+        android:layout_alignRight="@+id/AdditionSendTipButton"
+        android:layout_alignTop="@+id/AdditionSendTipButton"
+        android:onClick="requestNewTip"
+        android:text="@string/rounder_button_new_tip"
+        android:visibility="invisible" />
+
+</RelativeLayout>
